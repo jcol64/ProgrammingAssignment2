@@ -24,7 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+##calculate inverse of special vector
+##check if inverse is already calculated
+##if so, get from cache and skip computation
+##otherwise calculate inverse
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m <- x$getinv()
